@@ -1,4 +1,5 @@
-seller = input().upper
+
+seller = input().upper()
 salary = float(input())
 sales_made = float(input())
 
