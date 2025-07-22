@@ -1,7 +1,7 @@
 valores = input().split(' ')
-x = valores[0]
-y = valores [1]
-z = valores [2]
+x = int(valores[0])
+y = int(valores [1])
+z = int(valores [2])
 
 lista = [x,y,z]
 valor_crescente = sorted(lista)
