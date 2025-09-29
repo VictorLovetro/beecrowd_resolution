@@ -1,21 +1,29 @@
 while True:
+    while True: 
+            primeira_nota =  float(input())
+            if 0 < primeira_nota <= 10: 
+                break
+            else:
+                print('nota invalida')
 
-    first_note = float(input())
-    second_note = float(input())
-        
-    average = (first_note + second_note) / 2 
-    if first_note < 0 or second_note <0 :
-        if 0 < average < 10:
-            print(f'media = {average:.2f}')
-    else:
-        print('nota invalida')
-        
-    continuing = int(input("novo calculo (1-sim 2-nao)"))
-    if continuing == 1:
-        continue
-    else:
+    while True:
+        segunda_nota = float(input())
+        if 0 < segunda_nota <= 10:
+            media = (primeira_nota + segunda_nota) / 2
+            print(f'media = {media:.2f}')
+            break
+        else:
+            print('nota invalida')
+
+
+    while True:
+        print("novo calculo (1-sim 2-nao)")
+        resposta_usuario = int(input())
+        if resposta_usuario == 1:
+            break
+        if resposta_usuario == 2:
+            break
+    if resposta_usuario == 2:
         break
-
-    
     
  
